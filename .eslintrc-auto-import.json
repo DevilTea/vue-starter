@@ -135,6 +135,7 @@
     "useFullscreen": true,
     "useGeolocation": true,
     "useHead": true,
+    "useI18n": true,
     "useIdle": true,
     "useIntersectionObserver": true,
     "useInterval": true,

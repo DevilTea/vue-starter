@@ -3,6 +3,7 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import VuePlugin from '@vitejs/plugin-vue'
+import VueI18nPlugin from '@intlify/vite-plugin-vue-i18n'
 import IconsPlugin from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import AutoImportPlugin from 'unplugin-auto-import/vite'
@@ -16,6 +17,10 @@ export default defineConfig({
   plugins: [
     // REF: https://github.com/vitejs/vite/tree/main/packages/plugin-vue
     VuePlugin(),
+    // REF: https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
+    VueI18nPlugin({
+      include: path.resolve(__dirname, 'src/locales/**'),
+    }),
     // REF: https://github.com/antfu/unplugin-icons
     IconsPlugin({
       compiler: 'vue3',
@@ -35,6 +40,7 @@ export default defineConfig({
       imports: [
         'vitest',
         'vue',
+        'vue-i18n',
         '@vueuse/core',
         '@vueuse/head',
       ],

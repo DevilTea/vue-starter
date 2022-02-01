@@ -20,6 +20,7 @@
     "strict": true,
     "target": "esnext",
     "types": [
+      "@intlify/vite-plugin-vue-i18n/client",
       "unplugin-icons/types/vue"
     ],
     "useDefineForClassFields": true

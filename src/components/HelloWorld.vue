@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+
+const { t, locale } = useI18n()
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
+
+  <p @click="locale = locale === 'en' ? 'zh-TW' : 'en'">
+    {{ t('hello-i18n') }}
+  </p>
 
   <p>
     Recommended IDE setup:
