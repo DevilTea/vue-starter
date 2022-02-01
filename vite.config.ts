@@ -41,6 +41,7 @@ export default defineConfig({
         'vitest',
         'vue',
         'vue-i18n',
+        'vue-router',
         '@vueuse/core',
         '@vueuse/head',
       ],

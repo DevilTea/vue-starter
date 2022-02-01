@@ -5,14 +5,18 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img
-    alt="Vue logo"
-    src="./assets/logo.png"
-  >
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <nav>
+    <RouterLink :to="{name: 'home'}">
+      Home
+    </RouterLink>
+    <RouterLink :to="{name: 'about'}">
+      About
+    </RouterLink>
+  </nav>
+  <RouterView />
 </template>
 
-<style>
+<style lang="scss">
 /* stylelint-disable-next-line selector-max-id */
 #app {
   margin-top: 60px;
@@ -21,5 +25,9 @@ import HelloWorld from './components/HelloWorld.vue'
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+nav > a {
+  margin: 0 1rem;
 }
 </style>

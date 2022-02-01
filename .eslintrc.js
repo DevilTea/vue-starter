@@ -6,6 +6,16 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.eslint.json',
   },
+  settings: {
+    'import/resolver': {
+      'eslint-import-resolver-custom-alias': {
+        alias: {
+          '@': './src',
+        },
+        extensions: ['.js', '.ts', '.d.ts'],
+      },
+    },
+  },
   rules: {
     'vue/no-unregistered-components': [
       'error',

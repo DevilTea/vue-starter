@@ -169,6 +169,8 @@
     "useRafFn": true,
     "useRefHistory": true,
     "useResizeObserver": true,
+    "useRoute": true,
+    "useRouter": true,
     "useScreenSafeArea": true,
     "useScriptTag": true,
     "useScroll": true,
