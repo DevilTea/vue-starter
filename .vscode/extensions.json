@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "johnsoncodehk.volar",
+    "johnsoncodehk.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "editorconfig.editorconfig",
+    "lokalise.i18n-ally",
+    "streetsidesoftware.code-spell-checker",
+    "oderwat.indent-rainbow",
+    "naumovs.color-highlight",
+    "wheatjs.vueuse"
+  ],
+  "unwantedRecommendations": [
+    "octref.vetur",
+    "esbenp.prettier-vscode"
+  ]
+}

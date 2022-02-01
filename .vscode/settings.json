@@ -1,0 +1,97 @@
+{
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.linkedEditing": true,
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    "json",
+    "typescript",
+    "javascript",
+    "vue"
+  ],
+  "i18n-ally.displayLanguage": "zh-TW",
+  "i18n-ally.extract.keygenStyle": "kebab-case",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": [
+    "src/locales"
+  ],
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "vue"
+  ],
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules/*"
+  ],
+  "todo-tree.general.tags": [
+    "TODO:",
+    "FIXME:",
+    "BUG:",
+    "API:",
+    "MOCK:",
+    "REF:",
+    "NOTICE:",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    // API: Example
+    "API:": {
+      "background": "#905b9f",
+      "icon": "$(cloud-download)"
+    },
+    // BUG: Example
+    "BUG:": {
+      "background": "#b33b3b",
+      "icon": "$(bug)"
+    },
+    // FIXME: Example
+    "FIXME:": {
+      "background": "#cc538d",
+      "icon": "$(flame)"
+    },
+    // MOCK: Example
+    "MOCK:": {
+      "background": "#37851f",
+      "icon": "$(squirrel)"
+    },
+    // NOTICE: Example
+    "NOTICE:": {
+      "background": "#986042"
+    },
+    // REF: Example
+    "REF:": {
+      "background": "#2d747e",
+      "icon": "$(hubot)"
+    },
+    // TODO: Example
+    "TODO:": {
+      "background": "#c49000"
+    }
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "foreground": "#ffffff",
+    "type": "text"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "volar.completion.preferredAttrNameCase": "kebab",
+  "volar.completion.preferredTagNameCase": "pascal"
+}
