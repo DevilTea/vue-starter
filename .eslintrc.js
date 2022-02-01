@@ -7,8 +7,6 @@ module.exports = {
     project: './tsconfig.eslint.json',
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'vue/no-unregistered-components': [
       'error',
       {
@@ -22,4 +20,13 @@ module.exports = {
     ],
     'import/extensions': 'off',
   },
+  overrides: [
+    {
+      files: ['src/**/*.*'],
+      rules: {
+        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+      },
+    },
+  ],
 }
