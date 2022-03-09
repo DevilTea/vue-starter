@@ -5,45 +5,54 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
-    "prepare": "husky install",
-    "test:unit": "vitest",
-    "lint:script": "cross-env NODE_ENV=production eslint --fix '**/*.{vue,js,jsx,ts,tsx}'",
-    "lint:style": "cross-env NODE_ENV=production stylelint --fix '**/*.{vue,css,less,scss,sass}'"
+    "lint:script": "eslint --fix '**/*.{vue,js,jsx,ts,tsx}'",
+    "lint:style": "cross-env NODE_ENV=production stylelint --fix '**/*.{vue,css,less,scss,sass}'",
+    "test:unit": "cross-env NODE_ENV=production vitest",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "@vueuse/core": "^7.5.5",
+    "@vueuse/core": "^7.7.1",
     "@vueuse/head": "^0.7.5",
-    "vue": "^3.2.29",
-    "vue-i18n": "^9.2.0-beta.30",
-    "vue-router": "^4.0.12"
+    "vue": "^3.2.31",
+    "vue-i18n": "^9.2.0-beta.32",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@amatlash/vite-plugin-stylelint": "^1.2.0",
-    "@deviltea/eslint-config-vue": "^1.0.5",
+    "@deviltea/eslint-config-vue-ts": "^2.0.2",
     "@deviltea/stylelint-config-scss": "^1.0.0",
-    "@iconify/json": "^2.0.33",
-    "@intlify/vite-plugin-vue-i18n": "^3.2.1",
+    "@iconify/json": "^2.1.13",
+    "@intlify/vite-plugin-vue-i18n": "^3.3.1",
     "@nabla/vite-plugin-eslint": "^1.4.0",
-    "@vitejs/plugin-vue": "^2.1.0",
-    "@vue/compiler-sfc": "^3.2.29",
+    "@vitejs/plugin-vue": "^2.2.4",
+    "@vue/compiler-sfc": "^3.2.31",
     "@vue/test-utils": "^2.0.0-rc.18",
     "c8": "^7.11.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.8.0",
+    "eslint": "^8.10.0",
     "eslint-import-resolver-custom-alias": "^1.3.0",
-    "esno": "^0.14.0",
-    "happy-dom": "^2.31.1",
+    "esno": "^0.14.1",
+    "happy-dom": "^2.46.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.3",
-    "sass": "^1.49.7",
-    "stylelint": "^14.3.0",
-    "typescript": "^4.5.5",
-    "unplugin-auto-import": "^0.5.11",
-    "unplugin-icons": "^0.13.0",
-    "unplugin-vue-components": "^0.17.15",
-    "vite": "^2.7.13",
-    "vitest": "^0.2.6",
-    "vue-tsc": "^0.29.8"
+    "lint-staged": "^12.3.5",
+    "sass": "^1.49.9",
+    "stylelint": "^14.5.3",
+    "typescript": "^4.6.2",
+    "unplugin-auto-import": "^0.6.1",
+    "unplugin-icons": "^0.13.3",
+    "unplugin-vue-components": "^0.17.21",
+    "vite": "^2.8.6",
+    "vite-plugin-inspect": "^0.4.3",
+    "vitest": "^0.6.0",
+    "vue-tsc": "^0.32.1"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "rollup",
+        "eslint-plugin-import",
+        "postcss"
+      ]
+    }
   }
 }
