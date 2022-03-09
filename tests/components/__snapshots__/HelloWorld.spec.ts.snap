@@ -1,10 +1,11 @@
 // Vitest Snapshot v1
 
 exports[`shallowMount component 1`] = `
-"<h1 data-v-469af010=\\"\\">Welcome to Your Vue.js + TypeScript App</h1>
-<p data-v-469af010=\\"\\"> Recommended IDE setup: <a href=\\"https://code.visualstudio.com/\\" target=\\"_blank\\" data-v-469af010=\\"\\"> VSCode </a> + <a href=\\"https://github.com/johnsoncodehk/volar\\" target=\\"_blank\\" data-v-469af010=\\"\\"> Volar </a></p>
-<p data-v-469af010=\\"\\">See <code data-v-469af010=\\"\\">README.md</code> for more information.</p>
-<p data-v-469af010=\\"\\"><a href=\\"https://vitejs.dev/guide/features.html\\" target=\\"_blank\\" data-v-469af010=\\"\\"> Vite Docs </a> | <a href=\\"https://v3.vuejs.org/\\" target=\\"_blank\\" data-v-469af010=\\"\\"> Vue 3 Docs </a></p>
-<button type=\\"button\\" data-v-469af010=\\"\\"> count is: 0</button>
-<p data-v-469af010=\\"\\"> Edit <code data-v-469af010=\\"\\">components/HelloWorld.vue</code> to test hot module replacement. </p>"
+"<h1 data-v-6171b430=\\"\\">Welcome to Your Vue.js + TypeScript App</h1>
+<p data-v-6171b430=\\"\\">hello-i18n</p>
+<p data-v-6171b430=\\"\\"> Recommended IDE setup: <a href=\\"https://code.visualstudio.com/\\" target=\\"_blank\\" data-v-6171b430=\\"\\"> VSCode </a> + <a href=\\"https://github.com/johnsoncodehk/volar\\" target=\\"_blank\\" data-v-6171b430=\\"\\"> Volar </a></p>
+<p data-v-6171b430=\\"\\">See <code data-v-6171b430=\\"\\">README.md</code> for more information.</p>
+<p data-v-6171b430=\\"\\"><a href=\\"https://vitejs.dev/guide/features.html\\" target=\\"_blank\\" data-v-6171b430=\\"\\"> Vite Docs </a> | <a href=\\"https://v3.vuejs.org/\\" target=\\"_blank\\" data-v-6171b430=\\"\\"> Vue 3 Docs </a></p>
+<button type=\\"button\\" data-v-6171b430=\\"\\"> count is: 0</button>
+<p data-v-6171b430=\\"\\"> Edit <code data-v-6171b430=\\"\\">components/HelloWorld.vue</code> to test hot module replacement. </p>"
 `;

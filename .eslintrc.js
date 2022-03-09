@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    '@deviltea/eslint-config-vue',
+    '@deviltea/eslint-config-vue-ts',
     './.eslintrc-auto-import.json',
   ],
   parserOptions: {
